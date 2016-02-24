@@ -76,6 +76,7 @@
 		0EF66C6719CC8E0000BC267E /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF66C6319CC8E0000BC267E /* UIView+WebCacheOperation.h */; };
 		0EF66C6819CC8E0000BC267E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF66C6419CC8E0000BC267E /* UIView+WebCacheOperation.m */; };
 		0EFEA24D17FB08B400E451B6 /* MWCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EFEA24B17FB08B400E451B6 /* MWCommon.h */; };
+		1BFC785E1C0C44A00054BFA1 /* MWPhotoBrowser2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC785D1C0C44A00054BFA1 /* MWPhotoBrowser2.m */; };
 		2615E44B18CD57C700447857 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2615E44918CD57C700447857 /* NSData+ImageContentType.h */; };
 		2615E44C18CD57C700447857 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2615E44A18CD57C700447857 /* NSData+ImageContentType.m */; };
 		2615E44F18CD57E500447857 /* MKAnnotationView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2615E44D18CD57E500447857 /* MKAnnotationView+WebCache.h */; };
@@ -86,7 +87,6 @@
 		4C6F96E414AF70BD00F8389A /* MWPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96D814AF70BD00F8389A /* MWPhoto.h */; settings = {ATTRIBUTES = (); }; };
 		4C6F96E514AF70BD00F8389A /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96D914AF70BD00F8389A /* MWPhoto.m */; };
 		4C6F96E614AF70BD00F8389A /* MWPhotoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96DA14AF70BD00F8389A /* MWPhotoBrowser.h */; settings = {ATTRIBUTES = (); }; };
-		4C6F96E714AF70BD00F8389A /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96DB14AF70BD00F8389A /* MWPhotoBrowser.m */; };
 		4C6F96E814AF70BD00F8389A /* MWTapDetectingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96DC14AF70BD00F8389A /* MWTapDetectingImageView.h */; };
 		4C6F96E914AF70BD00F8389A /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96DD14AF70BD00F8389A /* MWTapDetectingImageView.m */; };
 		4C6F96EA14AF70BD00F8389A /* MWTapDetectingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96DE14AF70BD00F8389A /* MWTapDetectingView.h */; };
@@ -169,6 +169,7 @@
 		0EF66C6319CC8E0000BC267E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "Libraries/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"; sourceTree = SOURCE_ROOT; };
 		0EF66C6419CC8E0000BC267E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "Libraries/SDWebImage/SDWebImage/UIView+WebCacheOperation.m"; sourceTree = SOURCE_ROOT; };
 		0EFEA24B17FB08B400E451B6 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWCommon.h; path = Classes/MWCommon.h; sourceTree = SOURCE_ROOT; };
+		1BFC785D1C0C44A00054BFA1 /* MWPhotoBrowser2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWPhotoBrowser2.m; path = Classes/MWPhotoBrowser2.m; sourceTree = SOURCE_ROOT; };
 		2615E44918CD57C700447857 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "Libraries/SDWebImage/SDWebImage/NSData+ImageContentType.h"; sourceTree = SOURCE_ROOT; };
 		2615E44A18CD57C700447857 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "Libraries/SDWebImage/SDWebImage/NSData+ImageContentType.m"; sourceTree = SOURCE_ROOT; };
 		2615E44D18CD57E500447857 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+WebCache.h"; path = "Libraries/SDWebImage/SDWebImage/MKAnnotationView+WebCache.h"; sourceTree = SOURCE_ROOT; };
@@ -181,7 +182,6 @@
 		4C6F96D814AF70BD00F8389A /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhoto.h; path = Classes/MWPhoto.h; sourceTree = SOURCE_ROOT; };
 		4C6F96D914AF70BD00F8389A /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWPhoto.m; path = Classes/MWPhoto.m; sourceTree = SOURCE_ROOT; };
 		4C6F96DA14AF70BD00F8389A /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowser.h; path = Classes/MWPhotoBrowser.h; sourceTree = SOURCE_ROOT; };
-		4C6F96DB14AF70BD00F8389A /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWPhotoBrowser.m; path = Classes/MWPhotoBrowser.m; sourceTree = SOURCE_ROOT; };
 		4C6F96DC14AF70BD00F8389A /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingImageView.h; path = Classes/MWTapDetectingImageView.h; sourceTree = SOURCE_ROOT; };
 		4C6F96DD14AF70BD00F8389A /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWTapDetectingImageView.m; path = Classes/MWTapDetectingImageView.m; sourceTree = SOURCE_ROOT; };
 		4C6F96DE14AF70BD00F8389A /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingView.h; path = Classes/MWTapDetectingView.h; sourceTree = SOURCE_ROOT; };
@@ -294,8 +294,8 @@
 			children = (
 				0EFEA24B17FB08B400E451B6 /* MWCommon.h */,
 				4C6F96DA14AF70BD00F8389A /* MWPhotoBrowser.h */,
+				1BFC785D1C0C44A00054BFA1 /* MWPhotoBrowser2.m */,
 				0E3D58D818047D0B0000E3A0 /* MWPhotoBrowserPrivate.h */,
-				4C6F96DB14AF70BD00F8389A /* MWPhotoBrowser.m */,
 				0E3D5897180467550000E3A0 /* MWGridViewController.h */,
 				0E3D5898180467550000E3A0 /* MWGridViewController.m */,
 				4C6F96D814AF70BD00F8389A /* MWPhoto.h */,
@@ -517,9 +517,9 @@
 				4C6F96E514AF70BD00F8389A /* MWPhoto.m in Sources */,
 				0E17D76F17FAEADE0094ABF6 /* SDWebImageDownloaderOperation.m in Sources */,
 				2615E45018CD57E500447857 /* MKAnnotationView+WebCache.m in Sources */,
+				1BFC785E1C0C44A00054BFA1 /* MWPhotoBrowser2.m in Sources */,
 				0E17D76B17FAEADE0094ABF6 /* SDWebImageDecoder.m in Sources */,
 				0E17D77E17FAEADE0094ABF6 /* UIImageView+WebCache.m in Sources */,
-				4C6F96E714AF70BD00F8389A /* MWPhotoBrowser.m in Sources */,
 				0E3D58CF180474330000E3A0 /* PSTGridLayoutItem.m in Sources */,
 				0E17D76D17FAEADE0094ABF6 /* SDWebImageDownloader.m in Sources */,
 				0E3D58D718047B600000E3A0 /* MWGridCell.m in Sources */,
@@ -556,6 +556,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -577,6 +578,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/MWPhotoBrowser.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWPhotoBrowser-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -596,6 +598,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -631,6 +634,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -652,6 +656,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/MWPhotoBrowser.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWPhotoBrowser-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -664,6 +669,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/MWPhotoBrowser.dst;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MWPhotoBrowser-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
